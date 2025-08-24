@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, * {
+    box-sizing: border-box;
+    font-family: Arial, "sans-serif";
+}
+
+body {
+    background-color: #00594f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/rap_bg_shape_darkened.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    margin: 0px;
+}
+
+/* Styles the container for the flip cards.  */
+#flip_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1420px;
+    justify-content: space-evenly;
+    height: 900px;
+    margin: auto;
+}
+
+/* Defines the basic styling for a flip card element. */
+.flip-card {
+    float: left;
+    min-width: 300px;
+    width: 300px;
+    height: 275px;
+    perspective: 1000px;
+    margin: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Styles the front and back faces of the flip card. */
+.flip-card-front,
+.flip-card-back {
+    width: 300px;
+    height: 275px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border: 8px #FFF solid; */
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+    background-position: center;
+      backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* iOS Safari */
+  font-family: FranklinGothicDemi;
+}
+
+/* Styles the front and back faces of the flip card. */
+.flip-card-front {
+    position: absolute;
+    background-color: var(--main-color);
+    /*palette colours (PD)*/
+    height: 100%;
+    font-size: 1.5em;
+    /* padding-top: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flip-card-back {
+    background-color: var(--sub-color4);
+    /*palette colours (PD)*/
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    position: relative;
+    background-image: url("../img/final_shape_04_back.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Defines the inner container of the flip card for 3D transformation. */
+.flip-card-inner {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+/* Controls the rotation of the flip card for flipping effect. */
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Styles paragraphs within the flip card. */
+.flip-card p {
+    margin: 0.9em 0 0.2em 0;
+    line-height: normal;
+}
+
+.flip-card-front p {
+    padding: 0 0.5em;
+    color: #fff;
+    margin-top: 0px;
+    font-family: FranklinGothicHeavy;
+}
+
+.flip-card-back p {
+    padding: 40px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 520;
+    font-size: 1em;
+}
+
+/* Styles unordered lists on the back face of the flip card. */
+.flip-card-back ul {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* Defines styling for bold text within the flip card. */
+.fp_bold {
+    display: block;
+    font-weight: bold;
+}
+
+/* Adjusts flip card layout for smaller screens. */
+@media only screen and (max-width: 440px) {
+    .flip-card {
+        margin: 35px 0;
+    }
+}
+
+.flip-card-01 .flip-card-front,
+.flip-card-06 .flip-card-front,
+.flip-card-08 .flip-card-front {
+    background-image: url("../img/final_shape_01_front.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flip-card-01 .flip-card-back,
+.flip-card-06 .flip-card-back,
+.flip-card-08 .flip-card-back {
+    background-image: url("../img/final_shape_01_back.svg");
+}
+
+.flip-card-02 .flip-card-front,
+.flip-card-04 .flip-card-front,
+.flip-card-09 .flip-card-front {
+    background-image: url("../img/final_shape_03_front.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 330px;
+
+}
+
+.flip-card-02 .flip-card-front p,
+.flip-card-04 .flip-card-front p,
+.flip-card-09 .flip-card-front p {
+    position: relative;
+}
+
+.flip-card-02 .flip-card-back,
+.flip-card-04 .flip-card-back,
+.flip-card-09 .flip-card-back {
+    background-image: url("../img/final_shape_03_back.svg");
+    width: 340px;
+}
+
+.flip-card-03 .flip-card-front,
+.flip-card-07 .flip-card-front {
+    background-image: url("../img/final_shape_04_front.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flip-card-03 .flip-card-back,
+.flip-card-07 .flip-card-back {
+    background-image: url("../img/final_shape_04_back.svg");
+}
+
+.flip-card-05 .flip-card-front {
+    background-image: url("../img/final_shape_02_front.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 310px;
+}
+
+.flip-card-05 .flip-card-front p {
+    margin-top: -5px;
+}
+
+.flip-card-05 .flip-card-back {
+    background-image: url("../img/final_shape_02_back.svg");
+    width: 320px;
+}
+
+.flip-card-05 .flip-card-back p {
+    padding: 45px;
+    padding-top: 10px;
+}
+
+.flip-card-02 .flip-card-back p,
+.flip-card-09 .flip-card-back p {
+    padding-top: 73px;
+}
+
+.flip-card-03 .flip-card-back p,
+.flip-card-07 .flip-card-back p {
+    padding-top: 55px;
+}
+
+.flip-card-04 .flip-card-back p {
+    padding-top: 50px;
+}
+
+.flip-card-07 .flip-card-back p {
+    padding: 50px;
+    padding-left: 27px;
+}
+
+.flip-card-03 .flip-card-back p {
+    padding-top: 69px;
+    padding-right: 60px;
+}
+
+.flip-card-06 .flip-card-back p {
+    padding-top: 76px;
+}
+
+.nav_btns {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-left: 2em;
+    margin-top:0.5em;
+    margin-right: 2em;
+}
+
+.nav_btns a  {
+    padding-top: 5px;
+    background-color: transparent;
+    color: #444;
+    /* padding: 18px; */
+    width: 70px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    /* font-weight: bold; */
+    margin-top: 2px;
+}
+
+.arrow_path {
+    fill: #fff;
+}
+
+.cls-1,
+.arrow_path {
+    stroke-width: 0px;
+}
+
+#navigation circle {
+    fill: #000;
+    opacity: .51;
+}
+
+.flip-card:nth-child(-n+3) {
+margin-top: 0px;
+}

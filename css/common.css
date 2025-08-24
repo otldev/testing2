@@ -1,0 +1,24 @@
+/*
+
+*/
+
+@font-face {
+  font-family: FranklinGothicBook;
+  src: url("../font/FranklinGothic-Book.otf");
+}
+
+@font-face {
+  font-family: FranklinGothicHeavy;
+  src: url("../font/FranklinGothic-Heavy.otf");
+}
+
+@font-face {
+  font-family: FranklinGothicDemi;
+  src: url("../font/FranklinGothic-Demi.otf");
+}
+
+/* example */
+/*div {
+  font-family: FranklinGothicBook;
+}
+*/
