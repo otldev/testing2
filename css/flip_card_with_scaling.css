@@ -34,8 +34,9 @@ body {
 
 #circle-container {
   position: relative;
-  width: 100vw;
-  height: 1050px;
+  width: calc(100vw - 18px);
+  /* height: 1050px; */
+  height: calc(100vh - 14px);
 }
 
 .circle-wrapper {
