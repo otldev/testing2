@@ -127,11 +127,9 @@ body {
   }
 }
 
-.nav_btns {
+/* .nav_btns {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
-    /* width: 100%; */
     margin-left: 2em;
     margin-top:0.5em;
     margin-right: 2em;
@@ -141,7 +139,6 @@ body {
     padding-top: 5px;
     background-color: transparent;
     color: #444;
-    /* padding: 18px; */
     width: 70px;
     border: none;
     text-align: left;
@@ -150,7 +147,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     margin-top: 2px;
-}
+} */
 
 .arrow_path {
     fill: #fff;

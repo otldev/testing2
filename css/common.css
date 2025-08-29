@@ -17,8 +17,26 @@
   src: url("../font/FranklinGothic-Demi.otf");
 }
 
-/* example */
-/*div {
-  font-family: FranklinGothicBook;
+/* navigation arrow buttons */
+.nav_btns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-top:0.5em;
+    margin-right: 2em;
 }
-*/
+
+.nav_btns a {
+    padding-top: 5px;
+    background-color: transparent;
+    color: #444;
+    /* width: 70px; */
+    width: 3.7%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-top: 2px;
+}
+

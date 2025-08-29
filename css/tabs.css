@@ -173,7 +173,7 @@ body {
   border-right: 2px solid #00594f;
 }
 
-.nav_btns {
+/* .nav_btns {
     display: flex;
     justify-content: space-between;
     margin-left: 2em;
@@ -185,7 +185,6 @@ body {
     padding-top: 5px;
     background-color: transparent;
     color: #444;
-    /* width: 70px; */
     width: 3.7%;
     border: none;
     text-align: left;
@@ -193,7 +192,7 @@ body {
     transition: 0.4s;
     cursor: pointer;
     margin-top: 2px;
-}
+} */
 
 .arrow_path {
     fill: #fff;
