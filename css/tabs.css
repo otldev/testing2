@@ -13,27 +13,30 @@ html, * {
 
 body {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   background-image: url("../img/darkened_background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* height: 1070px; */
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0px;
 }
 
 #tabs_container {
-  max-width: 1520px;
-  height: 930px;
+  /* max-width: 1520px; */
+  /* height: 930px; */
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: center;
   align-items: flex-start;
   margin: auto;
   margin-top: 1em;;
+  column-gap: 4%;
 }
 
 .img_center {
@@ -46,8 +49,9 @@ body {
   flex-direction: column;
   margin: 2.5em 0;
   overflow: hidden;
-  max-width: 700px;
-  width: 700px;
+  /* max-width: 700px; */
+  /* width: 700px; */
+  /* width: 680px; */
 }
 
 .tabset_heading+.tabset {
@@ -68,14 +72,16 @@ body {
   background-color: #2e977e;
   color: #fff;
   padding: 15px;
+  padding-left:0.8em;
   cursor: pointer;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
+  font-size: 80%;
   font-weight: bold;
   min-width: 150px;
   text-align: left;
   padding-left: 25px;
   width: 33%;
-    font-family: FranklinGothicHeavy;
+  font-family: FranklinGothicHeavy;
 
 }
 
@@ -99,11 +105,19 @@ body {
 
 .tabset-panels {
   padding: 10px;
-  height: 230px;
+  /* height: 230px; */
+  /* height: 136px; */
+/*percentage height work here because of inheritance*/
+  /* height: 13em; */
+  min-height: 11em;
   background-color: #00594f;
   color: #fff;
-  padding: 1.17em;
-  font-size: 1.2em;
+  /* padding: 1.17em; */
+  padding: 0.8em;
+  padding-left: 1.5em;
+  /* font-size: 1.2em; */
+  /* font-size: 1em; */
+  font-size: 97%;
   line-height: 1.4;
 }
 
@@ -120,19 +134,24 @@ body {
 }
 
 .tabset-panel p:last-of-type {
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 .tabset_heading {
   border-bottom: 4px solid var(--black);
-  font-size: 1.9em;
+  /* font-size: 1.9em; */
+  font-size: 135%;
   /* font-weight: bold; */
   margin-bottom: 0.8em;
-  max-width: 700px;
+  /* max-width: 700px; */
   color: #fff;
   background-color: #2e977e;
   padding: 0.7em;
   font-family: FranklinGothicHeavy;
+}
+#tabs_container div:nth-child(3) p.tabset_heading {/*just the title of the tird tabs box*/
+  /* font-size:1.77em; */
+  /* font-size: 115%; */
 }
 
 .tabset_heading:nth-of-type(-n + 2) {
@@ -144,7 +163,8 @@ body {
 }
 
 .tabset_pair {
-  height: 400px;
+  /* height: 400px; */
+  width: 36%;
 }
 
 .tabset-nav .tabset-nav-item:nth-child(2) {
@@ -164,7 +184,8 @@ body {
     padding-top: 5px;
     background-color: transparent;
     color: #444;
-    width: 70px;
+    /* width: 70px; */
+    width: 3.7%;
     border: none;
     text-align: left;
     outline: none;
